@@ -2,16 +2,11 @@
   <img src="assets/aichessathon.png" alt="AI Chessathon 2026, Chess x Machine Learning Hackathon by Optiver" width="420">
 </p>
 
-<h1 align="center">A chess engine built from scratch in ten days</h1>
+<h1 align="center">A chess engine built from scratch in Python</h1>
 
 <p align="center">
   <b>AI Chessathon 2026</b>, the worldwide Chess x Machine Learning hackathon sponsored by <a href="https://optiver.com">Optiver</a><br>
   <b>Top 16 of 500+ teams</b> &nbsp;|&nbsp; solo entry &nbsp;|&nbsp; finalist at Encode Club, London, 12 September 2026
-</p>
-
-<p align="center">
-  <sub>SPONSORED BY</sub><br>
-  <a href="https://optiver.com"><img src="assets/optiver.svg" alt="Optiver" width="150"></a>
 </p>
 
 <p align="center">
@@ -27,7 +22,7 @@
 
 **500+ teams entered worldwide. 50 seats in the London final. One of them was mine.**
 
-Ten days, one person, no team. The competition asked for a single Python function,
+One person, no team. The competition asked for a single Python function,
 `get_move(fen, time_left_ms)`, running on one CPU core with 2 GB of memory and 120
 seconds on the clock, with no network, no third-party engines and no compiled binaries
 allowed. Everyone played a week-long rated ladder, then a 13-round Swiss over frozen
@@ -35,8 +30,7 @@ builds decided who travelled to London.
 
 This engine came through the qualifiers, finished **top 16 of 500+ teams**, the top 3%, and scores
 **64% against Stockfish capped at 2800**, which puts it around 2850 on Stockfish's own
-scale. It went from club level to that in ten days, built on a laptop and
-free cloud compute.
+scale. It went from club level to that on a laptop and free cloud compute.
 
 ## How it was built
 
@@ -109,14 +103,6 @@ reason the engine that travelled to London was the strongest one built.
 | Start-up | 17 s of the 30 s budget, down from 60 s |
 | Verification | a nodes-to-depth bench, then 192 games at two time controls, per change |
 
-## About this repository
-
-What is published here is the write-up and the original pure-Python engine that
-everything else was built on top of. The trained network, the compiled search and the
-training pipeline are deliberately not included. They are two weeks of measured work and
-several hundred hours of compute, and they stay private. I am happy to walk through the
-design in detail in person.
-
 ## Acknowledgements
 
 <a href="https://optiver.com"><img src="assets/optiver.svg" alt="Optiver" width="120"></a>
@@ -125,4 +111,5 @@ The AI Chessathon was organised and sponsored by **Optiver**, with the final hos
 Encode Club, London. Training data comes from the
 [Lichess open database](https://database.lichess.org). Built with
 [python-chess](https://python-chess.readthedocs.io), [numba](https://numba.pydata.org)
-and [PyTorch](https://pytorch.org).
+and [PyTorch](https://pytorch.org). The opening book is the freely distributed Polyglot
+book gm2001.bin.
